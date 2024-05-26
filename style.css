@@ -29,7 +29,7 @@ html,body{
 }
 #ptop{
     padding: 0px 30%;
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     text-align: center;
     width: 100%;
