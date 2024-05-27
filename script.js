@@ -7,10 +7,14 @@ function increaseScore(){
     score = score + 10;
     document.querySelector("#scoreVal").textContent = score;
 }
+function discreaseScore(){
+    score = score - 10;
+    document.querySelector("#scoreVal").textContent = score;
+}
 function makeBubble(){
 var clutter = "";
 
-for(var i = 0; i<=149;i++){
+for(var i = 0; i<=180-13;i++){
     var rn = Math.floor(Math.random()*10)
     clutter += `<div class="bubble">${rn}</div>`;
 }
@@ -40,6 +44,11 @@ document.querySelector("#pbtm").addEventListener("click", function(dets){
         increaseScore();
         makeBubble();
         newhitt();
+    }
+    else{
+        newhitt();
+        makeBubble();
+        discreaseScore();
     }
 
 });
